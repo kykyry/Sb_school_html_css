@@ -1,0 +1,89 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import pylab
+
+data0 = pd.read_table(r'C:\Users\masha\OneDrive\Рабочий стол\iact.txt', sep=r"\s+", header=None, error_bad_lines=False) #считывание файла, сразу не учитываются те строчки, которые считаются по каким-то причинам ошибочными
+data0.columns = ["Nsob","Nkl","N_im2","XcOn","YcOn","rcOn","Rc0","Tet","Nsize","NsizCl","width","leng","alf","con1","con2","Ass1On","disSim","dXTab","dYTab","Time","Cl","Px","igood","Rate","Xcof1","Ycof1","alfof1","assF1","dXFon1","dYFon1"] #переименование колонок
+data0 = data0.iloc[1:] #удаление повторяющейся строки с названиями колонок
+
+#print("start:\n", data0) #проверка правильности считывания данных
+
+data0['rcOn'] = data0['rcOn'].astype('float') #изменение типа для корректного построения графиков
+data0['width'] = data0['width'].astype('float')
+data0['leng'] = data0['leng'].astype('float')
+data0['Nkl'] = data0['Nkl'].astype('float')
+data0['Nsize'] = data0['Nsize'].astype('float')
+data0['XcOn'] = data0['XcOn'].astype('float')
+data0['YcOn'] = data0['YcOn'].astype('float')
+data0.N_im2 = data0.N_im2.astype('float')
+data0.NsizCl = data0.NsizCl.astype('float')
+
+
+data0 = data0.sort_values('Nsize') #сортировка значений по Nsize
+#print("отсортированная строка\n", data0['Nsize'])
+
+data = data0.reset_index() #заново проставляем индексы
+#print("отсортированная строка1\n", data['NsizCl']) #проверка
+
+s = np.zeros((50, 1)) # массивы, заполненные нулями
+ssr = np.zeros((50, 1))
+n = np.zeros((50, 1))
+f = np.zeros((50, 1))
+i = 0 #счетчик по s
+k = 0 #счетчик по NsizeCl
+s[0] = 30 #установка нулевого значения
+
+#цикл заполнения массива s
+while s[i] <= 10.0 ** 6:
+    i +=1
+    s[i]=s[i-1] * 10 ** 0.1
+i = 0
+#print("\ns:\n", s)
+
+#цикл заполнения массива n
+while ((s[i] != 0.0) & (data['Nsize'][k] < data['Nsize'][len(data['Nsize']) - 1])):
+    if ((s[i] < data['Nsize'][k]) & (data['Nsize'][k] < s[i + 1])):
+        n[i] += 1
+        k += 1
+    else:
+        i += 1
+i = 0
+print("\nn:\n", n)
+
+#цикл заполнения массива f
+while s[i] != 0.0:
+    f[i] = n[i]/(s[i + 1] - s[i])
+    i += 1
+i = 0
+print("\nf:\n", f)
+
+#цикл заполнения массива ssr
+while s[i] != 0.0:
+    ssr[i] = (s[i] * s[i + 1])** .5
+    i += 1
+i = 0
+#print("\nssr:\n", ssr)
+
+#нули преобразует в nan
+ssr[ssr == 0] = np.nan
+f[f == 0] = np.nan
+
+print("\nssr2:\n", ssr)
+print("\nf2:\n", f)
+
+#plt.scatter(ssr, f) #точки
+plt.plot(ssr, f, '-ok', color='gray') #линия с точками
+plt.title("F(<dS>)")
+plt.xlabel("<dS>")
+plt.ylabel("F")
+plt.yscale('log')
+plt.xscale('log')
+plt.show()
+
+
+#plt.title("Поле распределения осей ливней XcOn YcOn")
+#plt.xlabel("XcOn")
+#plt.ylabel("YcOn")
+#plt.scatter(data['XcOn'], data['YcOn'], s = 0.01)
+#plt.show()
