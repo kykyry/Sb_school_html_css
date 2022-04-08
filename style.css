@@ -1,22 +1,22 @@
 body{
-    color: blueviolet;
+    color: rgb(66, 38, 92);
     font-family: 'Raleway', sans-serif;
-    background-color: linear-gradient(to top left, powderblue, pink);
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to right, powderblue, pink);
 }
 
 .header_logo {
-    height: 30px;
+    height: 100px;
 }
 
 a {
     text-decoration: none;
-    color:blue;
+    color:rgb(2, 2, 56);
 }
 
 header a {
@@ -27,11 +27,11 @@ header a {
 header button {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
-    color: rgb(237, 167, 167);
-    background-color: #0cd309;
+    color: rgb(201, 107, 107);
+    background-color: #3c497d;
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 0 16px 36px rgb(52 213 68 /22%);
+    box-shadow: 0 16px 36px rgba(34, 39, 62, 0.566);
     padding: 15px;
 }
