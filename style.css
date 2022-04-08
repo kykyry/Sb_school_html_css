@@ -63,12 +63,14 @@ header button {
 .about h1 {
     font-size: 70px;
     line-height: 76px;
+    border: #ffffff;
 }
 
 .about p{
     font-size: 18px;
     line-height: 30px;
     opacity: 0.8;
+    border: #ffffff;
 }
 
 .about button {
