@@ -41,3 +41,18 @@ header button {
     box-shadow: 0 16px 36px rgba(34, 39, 62, 0.566);
     padding: 15px;
 }
+
+.about{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 115px;
+    padding-top: 115px;
+}
+.about_img {
+    width: 500px;
+}
+
+.about_cat {
+    width: 100px;
+}
