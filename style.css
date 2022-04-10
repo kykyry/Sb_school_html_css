@@ -114,5 +114,6 @@ header button {
 }
 
 .flex__group{
+    display: flex;
     flex-direction: column;
 }
