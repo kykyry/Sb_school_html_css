@@ -57,7 +57,7 @@ header button {
 }
 
 .about_cat {
-    width: 50px;
+    width: 100px;
 }
 
 .about h1 {
@@ -88,4 +88,8 @@ header button {
 
 .about__info {
     max-width: 550px;
+}
+
+.form__container{
+    width: 600px;
 }
