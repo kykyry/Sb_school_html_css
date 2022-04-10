@@ -113,3 +113,6 @@ header button {
     width: 600px;
 }
 
+.flex__group{
+    flex-direction: column;
+}
