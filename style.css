@@ -113,7 +113,7 @@ header button {
     width: 600px;
 }
 
-.flex__group{
+.form__group{
     display: flex;
     flex-direction: column;
     text-align: left;
