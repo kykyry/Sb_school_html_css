@@ -28,40 +28,43 @@
     </div>
   </section>
 
-  <section class="form">
+  <section class="form" id = "form">
     <div class="form__container">
       <h1>Оставьте свои данные</h1>
       <p>Мы не будем их никуда передавать.<br>
         Честно-честно. <br>
       </p>
       <form>
-        <p>
-          <label>ФИО</label>
-          <input type = "text" placeholder="Введите ФИО">
-        </p>
-        <p>
-          <label for = "pochta">Почта</label>
-          <input id = "pochta" type = "email" placeholder="Введите почту">
-        </p>
-        <p>
-          <input type = "tel" >
-        </p>
-        <p>
+        <div class="form__group">
+          <label for="name">Имя:</label>
+          <input type = "text" placeholder="Введите имя" id="name">
+          <label for="surname">Фамилия:</label>
+          <input type = "text" placeholder="Введите фамилию" id="surname">
+        </div>
+        <div class="form__group">
+          <label for = "pochta">Почта:</label>
+          <input id = "pochta" type = "email" placeholder="***@yandex.ry/***@mail.com">
+        </div>
+        <div class="form__group">
+          <label for = "phone">Телефон:</label>
+          <input type = "phone" placeholder="+*-999-999-99-99">
+        </div>
+        <div class="form__group">
           <label>Gender</label>
           <label>
-            <input type="ratio" name="gender">
+            <input type="radio" name="gender">
             Man
           </label>
           <lable>
-            <input type="ratio" name="gender">
+            <input type="radio" name="gender">
             Woman
           </lable>
           <lable>
-            <input type="ratio" name="gender">
+            <input type="radio" name="gender">
             Other
           </lable>
-        </p>
-        <p>
+        </div>
+        <div class="form__group">
           <label>Ваш возраст:</label>
           <select>
             <option value="18--" selected>меньше 18</option>
@@ -70,12 +73,12 @@
             <option value="35-45">35-45</option>
             <option value="45++">больше 45</option>
           </select>
-        </p>
-        <p>
+        </div>
+        <div class="form__group">
           <label>
             <input type="checkbox"> Я принимаю условия Пользовательского соглашения 
           </label>
-        </p>
+        </div class="form__group">
         <p>
           <button type="submit" onclick='alert("Приятно познакомиться"); return false'>Отправить</button>
           <button type="reset">Очистить форму</button>
