@@ -146,10 +146,10 @@ header button {
     margin-top: 40px;
 }
 
-form select{
+.form select{
     appearance: none;
 }
 
-form input{
+.form input{
     outline: none;
 }
