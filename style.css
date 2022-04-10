@@ -131,11 +131,25 @@ header button {
     margin-bottom: 15px;
 }
 
-.form input{
+.form input, .form option{
     font-size: 18px;
-    color: #7283c5;
+    color: #0025b7;
     height: 60px;
     padding: 0px 20px 0px 20px;
     border-radius: 15px;
     border: none;
+}
+
+.form__submit, .form__reset{
+    font-size: 18px;
+    font-weight:600;
+    margin-top: 40px;
+}
+
+form select{
+    appearance: none;
+}
+
+form input{
+    outline: none;
 }
