@@ -137,6 +137,7 @@ header button {
     padding: 0px 20px 0px 20px;
     border-radius: 15px;
     border: none;
+    margin-bottom: 15px;
 }
 
 .form__submit, .form__reset{
@@ -152,9 +153,9 @@ header button {
 .form__group select{
     appearance: none;
     font-size: 18px;
-    font-weight:600;
     border: none;
     border-radius: 15px;
+    height: 60px;
     padding: 0px 20px 0px 20px;
 }
 
