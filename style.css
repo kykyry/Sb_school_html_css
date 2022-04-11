@@ -30,7 +30,7 @@ header a {
     margin-right: 25px;
 }
 
-header button {
+header button, header button a {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     color: rgb(201, 107, 107);
@@ -155,7 +155,7 @@ header button {
     font-size: 18px;
     border: none;
     border-radius: 15px;
-    height: 60px;
+    height: 2000px;
     padding: 0px 20px 0px 20px;
 }
 
