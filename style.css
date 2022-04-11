@@ -131,7 +131,7 @@ header button {
     margin-bottom: 15px;
 }
 
-.form__group input, .form__group option{
+.form__group input,.form__group select, .form__group option{
     font-size: 18px;
     color: #0025b7;
     height: 60px;
