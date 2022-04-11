@@ -137,16 +137,19 @@ header button, .header__form {
 }
 
 .gender_1 {
+    align-items: center;
     grid-column: 1;
     grid-row: 1
   }
 
 .gender_2 {
+    align-items: center;
     grid-column: 2;
     grid-row: 1
 }
 
 .gender_3 {
+    align-items: center;
     grid-column: 3;
     grid-row: 1
   }
@@ -180,4 +183,8 @@ header button, .header__form {
 
 .form__group input{
     outline: none;
+}
+
+.form__group__check{
+    align-items: center;
 }
