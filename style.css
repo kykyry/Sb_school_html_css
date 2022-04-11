@@ -155,9 +155,9 @@ header button, header button a {
 }
 
 .form__group select{
-    height: 60px;
     appearance: none;
     font-size: 18px;
+    height: 60px;
     border: none;
     border-radius: 15px;
     padding: 0px 20px 0px 20px;
