@@ -153,10 +153,10 @@ header button, .header__form {
     font-size: 18px;
     color: #233063;
     height: 60px;
+    margin-bottom: 15px;
     padding: 0px 20px 0px 20px;
     border-radius: 15px;
     border: none;
-    margin-bottom: 15px;
 }
 
 .form__submit, .form__reset{
