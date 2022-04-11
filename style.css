@@ -129,7 +129,11 @@ header button, header button a {
     font-size: 18px;
     font-weight: 600;
 }
-
+.form__group #gender{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .form__group input, .form__group option{
     font-size: 18px;
     color: #233063;
@@ -151,11 +155,11 @@ header button, header button a {
 }
 
 .form__group select{
+    height: 60px;
     appearance: none;
     font-size: 18px;
     border: none;
     border-radius: 15px;
-    height: 2000px;
     padding: 0px 20px 0px 20px;
 }
 
