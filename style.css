@@ -30,7 +30,7 @@ a {
     margin-right: 25px;
 }
 
-header button, .header__form {
+header button {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     color: rgb(201, 107, 107);
@@ -38,6 +38,7 @@ header button, .header__form {
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    box-shadow: 0 16px 36px rgba(126, 138, 190, 0.566);
     padding: 15px;
 }
 
