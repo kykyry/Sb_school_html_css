@@ -42,6 +42,11 @@ a {
     padding: 15px;
 }
 
+button:hover{
+    background-color: rgb(241, 182, 182);
+    color:#233063;
+}
+
 .about{
     display:flex;
     justify-content: space-around;
