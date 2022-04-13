@@ -38,7 +38,7 @@ header button, .header__form {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 0 16px 36px rgba(126, 138, 190, 0.566);
+    
     padding: 15px;
 }
 
