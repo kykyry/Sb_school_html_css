@@ -19,14 +19,19 @@ header{
     height: 100px;
 }
 
-a {
+a:not(.header__form) {
     text-decoration: none;
     color:rgb(2, 2, 56);
+}
+
+button{
+    transition: background-color 1s ease;
 }
 
 button:hover {
     background-color: rgb(255, 255, 255);
     color:#233063;
+    box-shadow: 0 16px 36px rgb(2, 2, 56 / 20%);
 }
 
 a:hover {
@@ -74,7 +79,11 @@ header button {
 }
 
 .about_cat {
-    width: 100px;
+    width: 200px;
+}
+
+.about_cat:hover{
+    transform: rotate(360deg)
 }
 
 .about h1 {
@@ -207,4 +216,39 @@ header button {
 
 .form__group input{
     outline: none;
+}
+
+
+footer {
+    padding-top: 90px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+}
+
+.footer__copyright{
+    padding-top: 40px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.footer__group{
+    padding-right: 80px;
+}
+.footer__links{
+    display:flex;
+    flex-direction: column;
+}
+.footer__links h3{
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.footer__links a {
+    margin-bottom: 15px;
 }
