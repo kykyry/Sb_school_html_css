@@ -261,8 +261,8 @@ footer {
 
 .footer__logo {
     position:sticky;
-    left: 20px;
-    bottom: 100px;
+    right: 100px;
+    bottom: 80px;
     animation: footer__logo 7s ease-in-out infinite;
 }
 
