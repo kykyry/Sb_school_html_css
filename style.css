@@ -79,7 +79,7 @@ header button {
 }
 
 .about_cat {
-    width: 200px;
+    width: 100px;
     transition: transform .7s ease-in-out;
 }
 
