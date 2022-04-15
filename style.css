@@ -81,6 +81,7 @@ header button {
 .about_cat {
     width: 100px;
     transition: transform .7s ease-in-out;
+    position:absolute;
 }
 
 .about_cat:hover{
@@ -257,6 +258,7 @@ footer {
 
 .footer__logo {
     animation: footer__logo 7s ease-in-out infinite;
+    position:absolute;
 }
 
 @keyframes footer__logo{
