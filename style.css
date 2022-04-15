@@ -256,10 +256,10 @@ footer {
 }
 
 .footer__logo {
-    animation: rotate 7s ease-in-out infinite;
+    animation: rot 7s ease-in-out infinite;
 }
 
-@keyframes rotate {
+@keyframes rot {
     0% {
         height: 50%;
         opacity: 80%;
