@@ -261,17 +261,17 @@ footer {
 
 @keyframes footer__logo{
     0% {
-        height: 10px;
+        height: 40px;
         opacity: 0.8;
         transform: rotate(0deg);
     }
     50% {
-        height: 20px;
+        height: 100px;
         opacity:1;
         transform: rotate(100deg);
     }
     100% {
-        height: 10px;
+        height: 40px;
         opacity: 0.8;
         transform: rotate(360deg);
     }
