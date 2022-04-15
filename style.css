@@ -80,10 +80,11 @@ header button {
 
 .about_cat {
     width: 200px;
+    transition: transform .7s ease-in-out;
 }
 
 .about_cat:hover{
-    transform: rotate(360deg)
+    transform: rotate(360deg);
 }
 
 .about h1 {
@@ -228,6 +229,7 @@ footer {
 .footer__container {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .footer__copyright{
