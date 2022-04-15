@@ -230,6 +230,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: left;
+    padding-left: 20px;
 }
 
 .footer__copyright{
@@ -256,7 +257,6 @@ footer {
 }
 
 .footer__logo {
-    max-width: 300px;
     animation: footer__logo 7s ease-in-out infinite;
 }
 
