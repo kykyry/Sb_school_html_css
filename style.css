@@ -229,7 +229,7 @@ footer {
 .footer__container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: left;
 }
 
 .footer__copyright{
@@ -258,6 +258,7 @@ footer {
 .footer__logo {
     max-width: 300px;
     animation: footer__logo 7s ease-in-out infinite;
+    padding-left: 100px;
 }
 
 @keyframes footer__logo{
