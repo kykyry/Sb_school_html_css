@@ -259,17 +259,20 @@ footer {
     animation: rot 7s ease-in-out infinite;
 }
 
-@keyframes rot {
+@keyframes rot{
     0% {
-        height: 50%;
+        height: 100px;
         opacity: 80%;
+        transform: rotate(0deg);
     }
-    60% {
-        height: 70%;
+    50% {
+        height: 200px;
         opacity:100%;
+        transform: rotate(100deg);
     }
     100% {
-        height: 50%;
+        height: 100px;
         opacity: 80%;
+        transform: rotate(360deg);
     }
 }
