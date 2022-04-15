@@ -256,7 +256,6 @@ footer {
 }
 
 .footer__logo {
-    height: 50%;
     animation: rotate 7s ease-in-out infinite;
 }
 
