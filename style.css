@@ -258,7 +258,6 @@ footer {
 .footer__logo {
     max-width: 300px;
     animation: footer__logo 7s ease-in-out infinite;
-    padding-left: 100px;
 }
 
 @keyframes footer__logo{
