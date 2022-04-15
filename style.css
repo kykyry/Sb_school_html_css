@@ -256,23 +256,23 @@ footer {
 }
 
 .footer__logo {
-    animation: rot 7s ease-in-out infinite;
+    animation: footer__logo 7s ease-in-out infinite;
 }
 
-@keyframes rot{
+@keyframes footer__logo{
     0% {
-        height: 100px;
-        opacity: 80%;
+        height: 10px;
+        opacity: 0.8;
         transform: rotate(0deg);
     }
     50% {
-        height: 200px;
-        opacity:100%;
+        height: 20px;
+        opacity:1;
         transform: rotate(100deg);
     }
     100% {
-        height: 100px;
-        opacity: 80%;
+        height: 10px;
+        opacity: 0.8;
         transform: rotate(360deg);
     }
 }
