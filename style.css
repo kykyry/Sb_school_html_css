@@ -5,6 +5,9 @@ body{
 }
 
 header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -257,8 +260,10 @@ footer {
 }
 
 .footer__logo {
+    position:sticky;
+    left: 20px;
+    bottom: 100px;
     animation: footer__logo 7s ease-in-out infinite;
-    position:absolute;
 }
 
 @keyframes footer__logo{
