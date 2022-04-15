@@ -260,7 +260,7 @@ footer {
 }
 
 .footer__logo {
-    position:absolute;
+    position:relative;
     z-index: 2;
     right: 30px;
     bottom: 80px;
