@@ -19,7 +19,7 @@ header{
 }
 
 .header_logo {
-    height: 100px;
+    height: 80px;
 }
 
 a:not(.header__form) {
