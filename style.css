@@ -269,7 +269,7 @@ footer {
     position:relative;
     display: inline-block;
     z-index: 2;
-    top: auto;
+    top: 50%;
     right: 20px;
     max-width: 100px;
     bottom: 80px;
