@@ -268,10 +268,9 @@ footer {
 .footer__logo {
     position:relative;
     display: inline-block;
-    z-index: 2;
-    top: 50%;
-    right: 20px;
-    max-width: 100px;
+    top: 50px;
+    right: 100px;
+    max-width: 150px;
     bottom: 80px;
     animation: footer__logo 7s ease-in-out infinite;
 }
