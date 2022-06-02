@@ -245,6 +245,7 @@ footer {
     padding-top: 40px;
     text-align: center;
     opacity: 0.5;
+    background-color: rgb(175, 172, 172);
 }
 
 .footer__group{
