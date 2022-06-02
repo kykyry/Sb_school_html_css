@@ -77,6 +77,11 @@ header button {
     background-position: center;
     background-size: cover;
 }
+
+.orb-canvas{
+    
+}
+
 .about_img {
     width: 500px;
 }
@@ -261,6 +266,7 @@ footer {
 
 .footer__logo {
     position:relative;
+    display: inline-block;
     z-index: 2;
     right: 30px;
     bottom: 80px;
@@ -282,5 +288,53 @@ footer {
         height: 100px;
         opacity: 0.5;
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        padding: 10px;
+    }
+    .header_logo {
+        height: 20px;
+    }
+
+    header h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    header, .form, .about, footer {
+        padding: 50px 10px;
+    } 
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about_img{
+        width: 280px;
+    }
+    .about_cat{
+        width: 75px;
+    }
+    .footer__container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1024px) {
+    header {
+        padding: 20px;
+    }
+    header h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    header, .form, .about, footer {
+        padding: 115px 20px;
+    } 
+    .about_img{
+        width: 280px;
+    }
+    .about_cat{
+        width: 75px;
     }
 }
